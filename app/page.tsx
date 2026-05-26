@@ -139,7 +139,7 @@ export default function CourseRegistrationPOS() {
     if (!student) return;
 
     fetch(
-      `http://localhost:5000/api/enrollment/${student.student_id}`
+      `https://cpos-backend-dvke.onrender.com/api/enrollment/${student.student_id}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -158,7 +158,7 @@ export default function CourseRegistrationPOS() {
 
     const fetchCourses = () => {
 
-      fetch("http://localhost:5000/api/courses")
+      fetch("https://cpos-backend-dvke.onrender.com/api/courses")
         .then((res) => res.json())
         .then((data) => {
 
@@ -432,7 +432,7 @@ export default function CourseRegistrationPOS() {
       }
 
       const res = await fetch(
-        "http://localhost:5000/api/enroll",
+        "https://cpos-backend-dvke.onrender.com/api/enroll",
         {
           method: "POST",
 
