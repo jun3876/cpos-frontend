@@ -15,7 +15,7 @@ export default function LoginPage() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/login",
+  "https://paichaicpos-backend.onrender.com/api/login",
         {
           method: "POST",
 
